@@ -1,0 +1,8 @@
+{% comment %} section spacing {% endcomment %}
+
+{% if section.settings.custom_spacing == true %}
+  class="section section-custom-padding" style="--spacing-top: {{ section.settings.padding_top }}px;--spacing-bottom: {{ section.settings.padding_bottom }}px;--spacing-top-mobile: {{ section.settings.padding_top_mobile }}px;--spacing-bottom-mobile: {{ section.settings.padding_bottom_mobile }}px"
+{% else %}
+  class="section section-theme-spacing"
+{% endif %}
+
